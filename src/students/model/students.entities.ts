@@ -5,10 +5,10 @@ export class Students {
     id: string;
 
     @Column(
-        // {name:'',
-        // type:"timestamp",
-        // nullable:true,
-        // comment:""}
+        {name:'',
+        type:"timestamp",
+        nullable:true,
+        comment:""}
     )
     name: string;
 
