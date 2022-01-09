@@ -19,7 +19,11 @@ export class UsersService {
     return this.userRepository.find();
   }
 
-  findOne(id: string) {
+  async findUser(username): Promise<any> {
+    return this.userRepository.findOne({ account: username })
+  }
+
+  async findOne(id: string) {
     return this.userRepository.findOne(id);
   }
 

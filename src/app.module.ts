@@ -6,6 +6,9 @@ import { Students } from "./students/model/students.entities";
 import { StudentsModule } from './students/students.module';
 import { BooksModule } from './books/books.module';
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersService } from './users/users.service';
+
 
 @Module({
   imports: [
@@ -33,7 +36,8 @@ import { UsersModule } from './users/users.module';
 
     StudentsModule,
     BooksModule,
-    UsersModule
+    UsersModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
